@@ -14,9 +14,9 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fcd182;
-    color: #333333 !important;
-    font-weight: 800;
+    background: #000000;
+    color: #ffffff !important;
+  
     padding: 15px;
 }
 .secone{
@@ -25,7 +25,15 @@ section{
     gap: 20px;
     
 }
-
+.seconed a{
+    text-decoration: none;
+    color: #ffffff !important;
+}
+.seconed a:hover{
+    text-decoration: none;
+    background: none !important;
+    color: #ffffff !important;
+}
 body{
     
     min-width: 250px;
@@ -58,7 +66,7 @@ nav{
     background: #fff;
     box-shadow: 0 0 15px #00000020;
     
-    padding: 20px;
+    padding: 15px;
 }
 .nav-logo{
     text-align: center;
@@ -87,12 +95,14 @@ nav{
     font-weight: 800;
     padding:15px;
     transition: .2s ease all;
-    border: 1px solid transparent;
+    border-bottom: 2px solid #0059ff00;
+    
+}
+.nav-link a.active{
+    border-bottom: 2px solid #1727ff;
 }
 .nav-link a:hover{
-    background: #00000010;
-    border: 1px solid #00000005;
-    border-radius: 6px;
+    border-bottom: 2px solid #1727ff;
 }
 .nav-link-button{
     display: flex;
@@ -412,7 +422,7 @@ nav{
      
 }
 .button-emlak{
-    background-color: rgb(29, 179, 29);
+    background-color: rgb(47, 118, 252);
     color: #fff;
     padding: 10px;
     margin: 10px 0;
@@ -543,8 +553,9 @@ nav{
     padding-top: 50px;
     height: 400px;
     border-radius: 15px !important;
-    background: url(img/footer-phone-bg.png);
+    background: url(https://images.unsplash.com/photo-1608249889684-e91ddbdd47cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover !important;
+    background-position: bottom;
 }
 .h-text-header{
     font-size: 26px;
@@ -567,7 +578,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #F59A12;
+    background: #1f1f1f;
     height: 350px;
     gap: 13px;
     padding: 15px;
@@ -628,12 +639,12 @@ nav{
     height: 50px;
 }
 .h-buttons:nth-child(1){
-    background: #F59A12;
+    background: #000000;
     color: #fff;
 }
 .h-buttons:nth-child(2){
-    color: #F59A12;
-    background: #FEF5E0;
+    color: #000000;
+    background: #ffffff;
 }
 .mySwiper{
     display: flex;
@@ -701,7 +712,7 @@ nav{
     gap: 20px;
 }
 .footer-container-width{
-    background: #ffffff;
+    background: #00000000;
     border-radius: 15px;
     border: 1px solid #ccc;
 }
@@ -721,6 +732,7 @@ nav{
 }
 .footer-links a{
     color: #000000;
+    font-weight: 800;
     padding: 5px 10px;
     text-decoration: none;
 }

@@ -276,6 +276,11 @@
                 }
 }
 @media screen and (max-width:850px) {
+    .fixed-nav{
+        display: none;
+        flex-direction: column;
+        justify-content: left;
+    }
    .about-us-text-header{
     font-size: 22px;
    }

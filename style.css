@@ -10,6 +10,22 @@ html{
 section{
     scroll-margin-top:100px ;
 }
+.fixed-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fcd182;
+    color: #333333 !important;
+    font-weight: 800;
+    padding: 15px;
+}
+.secone{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
 body{
     background: linear-gradient(to right, #ffffff , #eefcfc);
     min-width: 250px;

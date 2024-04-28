@@ -27,7 +27,7 @@ section{
 }
 
 body{
-    background: linear-gradient(to right, #ffffff , #eefcfc);
+    
     min-width: 250px;
 }
 nav{
@@ -534,8 +534,8 @@ nav{
     padding-top: 50px;
     height: 500px;
     border-radius: 15px !important;
-    background: url(img/happycustomer.png);
-    background-size: cover !important;
+    background: #00000010;
+    border: 1px solid #ccc;
 }
 .footer-phone-bg{
     display: flex;

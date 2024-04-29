@@ -650,16 +650,7 @@ nav{
     color: #000000;
     background: #ffffff;
 }
-.mySwiper{
-    display: flex;
-    max-width: 500px;
-    height: 400px;
-    margin:0 15px !important;
-    border-radius: 16px;
-}
-.swiper-slide{
-    margin-top: 50px;
-}
+
 .sy-box a{
   
     color: #006EDF;

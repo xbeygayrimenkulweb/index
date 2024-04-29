@@ -16,8 +16,8 @@ section{
     justify-content: space-between;
     background: #000000;
     color: #ffffff !important;
-  
-    padding: 15px;
+    font-size: 14px;
+    padding: 5px 15px;
 }
 .secone{
     display: flex;
@@ -148,7 +148,7 @@ nav{
     margin-top: 100px;
 }
 .home-text{
-    font-size: 58px;
+    font-size: 32px;
     font-weight: 800;
     color: #383E42;
 }
@@ -486,7 +486,7 @@ nav{
 }
 .box-f{
     background: #fff;
-    width: 23%;
+    width: 33%;
     padding: 20px;
     box-shadow: 0 0 15px #00000010;
     border-radius: 14px;

@@ -89,6 +89,10 @@ nav{
     font-size: 14px;
     
 }
+.goog-te-logo {
+    display: none !important;
+    /* Hide Google Translate logo */
+}
 .nav-link a{
     color: #070707;
     text-decoration: none;

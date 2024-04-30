@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 section{
     scroll-margin-top:100px ;
@@ -35,7 +36,7 @@ section{
     color: #ffffff !important;
 }
 body{
-    
+    background: linear-gradient(to top, #ffffff, #f9f9ff);
     min-width: 250px;
 }
 nav{
@@ -477,7 +478,7 @@ nav{
 }
 .bg-effect{
     padding-top: 50px;
-    background: linear-gradient(to bottom, #fff , #ffffff20);
+    
 }
 .box-f-container{
     display: flex;
@@ -548,16 +549,36 @@ nav{
     padding-top: 50px;
     height: 500px;
     border-radius: 15px !important;
-    background: #00000010;
-    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 0 15px #00000020;
+    
+}
+.flwxo{
+    gap: 50px; flex-direction: row-reverse;
+}
+.flwxo .contact-container-icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #ffefe259;
+    border-radius: 11px;
+    color: #000;
+    padding: 10px;
+    width: 100% ;
+    margin-top: 20px;
+}
+.contact-container-icon-link a{
+    color: #000;
+    text-decoration: none;
 }
 .footer-phone-bg{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    height: 400px;
+    padding-bottom: 50px;
+    
     border-radius: 15px !important;
-    background: url(https://images.unsplash.com/photo-1608249889684-e91ddbdd47cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background: #fff;
+    color: #000;
     background-size: cover !important;
     background-position: bottom;
 }
@@ -569,8 +590,8 @@ nav{
 .h-text-customer{
     height: 200px;
     width: 350px;
-    background: #FFFFFF;
-    color: #383E42;
+    background: #ff9900;
+    color: #fff;
     margin-top: 50px;
     padding: 20px;
     border-radius: 10px 10px 0 10px;
@@ -643,7 +664,7 @@ nav{
     height: 50px;
 }
 .h-buttons:nth-child(1){
-    background: #000000;
+    background: #ff9900;
     color: #fff;
 }
 .h-buttons:nth-child(2){
@@ -661,11 +682,16 @@ nav{
 }
 .sy-box img{
     border-radius: 10px;
+    
 }
-
+.sy-box-img img{
+    box-shadow: 0 0 15px #00000020;
+}
 .sy-box-img{
     position: relative;
+    
 }
+
 .sy-box-img-title{
     position: absolute;
     bottom: 40px;
@@ -689,7 +715,7 @@ nav{
     width: 350px;
 }
 .footer-phone-text{
-    color: #fff;
+    color: #000;
     max-width: 400px;
 }
 .f-phone-text-header{
@@ -707,9 +733,9 @@ nav{
     gap: 20px;
 }
 .footer-container-width{
-    background: #00000000;
+    background: #fff;
     border-radius: 15px;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 15px #00000020;
 }
 .footer-container{
     display: flex;
@@ -759,7 +785,7 @@ nav{
 }
 .border-line{
    
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #00000010;
 }
 
 .footer-section{

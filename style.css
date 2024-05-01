@@ -556,6 +556,42 @@ nav{
 .flwxo{
     gap: 50px; flex-direction: row-reverse;
 }
+.lang-sec{
+    position: relative;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+.lang-sec a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    
+    padding:4px 5px;
+}
+.lang-sec a:hover{
+    background: #ff910038;
+}
+.lang-sec-alt{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: scale(0);
+    background: #fff;
+    box-shadow: 0 0 15px #00000020;
+    transition: 0.3s ease;
+    transform-origin: top right;
+}
+.lang-sec:hover .lang-sec-alt {
+    transform: scale(1);
+}
 .flwxo .contact-container-icon-link{
     display: flex;
     align-items: center;

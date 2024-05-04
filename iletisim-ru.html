@@ -163,25 +163,28 @@
                         </div>
                     </div>
                 </div>
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 <div class="about-us-text c-form-w">
                     <div class="contact-form-c">
                         <div class="c-form-title">
                             Заполните форму ниже
                         </div>
-                        <div style="margin-top: 30px;" class="input-c-form-container">
-                            <div class="input-c-form-f">
-                                <input type="text" placeholder="Имя">
-                                <input type="text" placeholder="Фамилия">
+                        <form id="contactForm" action="https://formspree.io/f/xleqzady" method="post" target="dummyframe">
+                            <div style="margin-top: 30px;" class="input-c-form-container">
+                                <div class="input-c-form-f">
+                                    <input type="text" name="İsim" placeholder="Имя" required>
+                                    <input type="text" name="Soyisim" placeholder="Фамилия" required>
+                                </div>
+                                <div class="input-c-form-f">
+                                    <input type="text" name="Telefon" placeholder="Телефон" required>
+                                    <input type="email" name="Email" placeholder="Электронная почта" required>
+                                </div>
+                                <div class="input-c-form-textarea">
+                                    <textarea name="message" id="" cols="30" rows="10" placeholder="Введите ваше сообщение" required></textarea>
+                                </div>
                             </div>
-                            <div class="input-c-form-f">
-                                <input type="text" placeholder="Телефон">
-                                <input type="text" placeholder="Электронная почта">
-                            </div>
-                            <div class="input-c-form-textarea">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
-                            </div>
-                        </div>
-                        <div style="width: 100%;" class="primary-btn-s2">Отправить сообщение</div>
+                            <button type="submit" style="width: 100%;" class="primary-btn-s2">Отправить сообщение</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -239,13 +242,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            loop: true,
-            navigation: {
-                nextEl: ".r1-btn",
-                prevEl: ".l1-btn",
-            },
+         document.getElementById("contactForm").addEventListener("submit", () => {
+
+            // Form gönderildiğinde teşekkür mesajı göster
+            setTimeout(() => {
+                alert("Мы благодарим Вас. Ваша информация дошла до нас!");
+
+                // Form alanlarını temizle
+                document.getElementById("contactForm").reset();
+
+                // Örnek olarak bir öğeyi gizle
+                formpop.style.display = "none"
+            }, 500);
         });
     </script>
 </body>

@@ -164,25 +164,28 @@
                         </div>
                     </div>
                 </div>
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 <div  class="about-us-text c-form-w">
                     <div class="contact-form-c">
                         <div class="c-form-title">
                             Aşağıdaki Formu Doldurun
                         </div>
-                        <div style="margin-top: 30px;" class="input-c-form-container">
-                            <div class="input-c-form-f">
-                                <input type="text" placeholder="Adınız">
-                                <input type="text" placeholder="Soyisim">
+                        <form id="contactForm" action="https://formspree.io/f/xleqzady" method="post" target="dummyframe">
+                            <div style="margin-top: 30px;" class="input-c-form-container">
+                                <div class="input-c-form-f">
+                                    <input type="text" name="İsim" placeholder="Adınız" required>
+                                    <input type="text" name="Soyisim" placeholder="Soyisim" required>
+                                </div>
+                                <div class="input-c-form-f">
+                                    <input type="text" name="Telefon" placeholder="Telefon" required>
+                                    <input type="email" name="Email" placeholder="E-posta" required>
+                                </div>
+                                <div class="input-c-form-textarea">
+                                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mesajınızı Girin" required></textarea>
+                                </div>
                             </div>
-                            <div class="input-c-form-f">
-                                <input type="text" placeholder="Telefon">
-                                <input type="text" placeholder="E-posta">
-                            </div>
-                            <div class="input-c-form-textarea">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Mesajınızı Girin"></textarea>
-                            </div>
-                        </div>
-                        <div style="width: 100%;" class="primary-btn-s2">Mesaj Gönder</div>
+                            <button type="submit" style="width: 100%;" class="primary-btn-s2">Mesaj Gönder</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -239,14 +242,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            loop: true,
-            navigation: {
-                nextEl: ".r1-btn",
-                prevEl: ".l1-btn",
-            },
-        });
+         document.getElementById("contactForm").addEventListener("submit", () => {
+
+                // Form gönderildiğinde teşekkür mesajı göster
+                setTimeout(() => {
+                    alert("Teşekkür ederiz. Bilgileriniz bize ulaştı!");
+
+                    // Form alanlarını temizle
+                    document.getElementById("contactForm").reset();
+
+                    // Örnek olarak bir öğeyi gizle
+                    formpop.style.display = "none"
+                }, 500);
+            });
+        
     </script>
 </body>
 
